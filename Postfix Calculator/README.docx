@@ -1,1 +1,1 @@
-program reads from a datafile and solves the postfix expressions written in the file
+program reads from a datafile and solves the postfix expressions as double values written in the file
