@@ -2,25 +2,24 @@
 import java.io.*;
 import java.util.*;
 public class PostfixCalc {
-	public static final String ADD = "+"; 
-    public static final String MUL = "*";
-    public static final String DIV = "/";
-    public static final String SUB = "-";
-	public static final String EXP = "^"; 
-    public static final String NEG = "_";  //unary negation
-    public static final String SQRT = "#"; // square root
+  public static final String ADD = "+"; 
+  public static final String MUL = "*";
+  public static final String DIV = "/";
+  public static final String SUB = "-";
+  public static final String EXP = "^"; 
+  public static final String NEG = "_";  //unary negation
+  public static final String SQRT = "#"; // square root
 
 	
-	public static void main(String[] args) throws IOException {
-		System.out.println("Hello this is a postfix calculator");
-		calculateFile("in.dat");
+  public static void main(String[] args) throws IOException {
+	  System.out.println("Hello this is a postfix calculator");
+	  calculateFile("in.dat");
 	}
 		
-	public static void calculateFile(String fileName) throws IOException {
-		
-	    FileInputStream fis = new FileInputStream(fileName);
-		BufferedReader br = new BufferedReader(new InputStreamReader(fis));
-		try {
+  public static void calculateFile(String fileName) throws IOException {
+	  FileInputStream fis = new FileInputStream(fileName);
+	  BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+	   try {
 		String line = null;
 		while ((line = br.readLine()) != null) {
 			//System.out.println(line); //used this to check if program was reading 
